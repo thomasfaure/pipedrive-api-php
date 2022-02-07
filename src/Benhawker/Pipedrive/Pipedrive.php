@@ -1,7 +1,7 @@
 <?php namespace Benhawker\Pipedrive;
 
 /**
- * Pipedrive API wrapper class v0.1
+ * Pipedrive API wrapper class v0.1.2
  *
  * Author: Ben Hawker (ben@tickettoridegroup.com) 2014
  * Author: Thomas Fauré — Whaller (thomas.faure@whaller.com) 2022
