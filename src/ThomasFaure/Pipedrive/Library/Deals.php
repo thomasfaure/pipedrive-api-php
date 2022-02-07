@@ -1,6 +1,8 @@
-<?php namespace Benhawker\Pipedrive\Library;
+<?php
 
-use Benhawker\Pipedrive\Exceptions\PipedriveMissingFieldError;
+namespace ThomasFaure\Pipedrive\Library;
+
+use ThomasFaure\Pipedrive\Exceptions\PipedriveMissingFieldError;
 
 /**
  * Pipedrive Deals Methods
@@ -18,14 +20,14 @@ class Deals
 {
     /**
      * Hold the pipedrive cURL session
-     * @var \Benhawker\Pipedrive\Library\Curl Curl Object
+     * @var \ThomasFaure\Pipedrive\Library\Curl Curl Object
      */
     protected $curl;
 
     /**
      * Initialise the object load master class
      */
-    public function __construct(\Benhawker\Pipedrive\Pipedrive $master)
+    public function __construct(\ThomasFaure\Pipedrive\Pipedrive $master)
     {
         //associate curl class
         $this->curl = $master->curl();
@@ -48,13 +50,13 @@ class Deals
      * @param  string $name pipedrive deals title
      * @return array  returns detials of a deal
      */
-    public function getByName($name, $personId=null, $orgId=null)
+    public function getByName($name, $personId = null, $orgId = null)
     {
         $params = array('term' => $name);
-        if($personId) {
+        if ($personId) {
             $params['person_id'] = $personId;
         }
-        if($orgId) {
+        if ($orgId) {
             $params['org_id'] = $orgId;
         }
         return $this->curl->get('deals/find', $params);
@@ -91,7 +93,7 @@ class Deals
 
         return $this->curl->post('deals', $data);
     }
-    
+
     /**
      * Adds a product to a deal
      *
@@ -141,5 +143,4 @@ class Deals
     {
         return $this->curl->put('deals/' . $dealId, array('stage_id' => $stageId));
     }
-
 }

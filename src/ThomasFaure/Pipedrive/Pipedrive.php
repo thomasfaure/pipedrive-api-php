@@ -1,4 +1,6 @@
-<?php namespace Benhawker\Pipedrive;
+<?php
+
+namespace ThomasFaure\Pipedrive;
 
 /**
  * Pipedrive API wrapper class v0.1.2
@@ -55,42 +57,42 @@ class Pipedrive
     protected $version;
     /**
      * Hold the Curl Object
-     * @var \Benhawker\Pipedrive\Library\Curl Curl Object
+     * @var \ThomasFaure\Pipedrive\Library\Curl Curl Object
      */
     protected $curl;
     /**
      * Placeholder attritube for the pipedrive persons class
-     * @var \Benhawker\Pipedrive\Library\Persons Persons Object
+     * @var \ThomasFaure\Pipedrive\Library\Persons Persons Object
      */
     protected $persons;
     /**
      * Placeholder attritube for the pipedrive deals class
-     * @var \Benhawker\Pipedrive\Library\Deals Deals Object
+     * @var \ThomasFaure\Pipedrive\Library\Deals Deals Object
      */
     protected $deals;
     /**
      * Placeholder attritube for the pipedrive activities class
-     * @var \Benhawker\Pipedrive\Library\Activities Activities Object
+     * @var \ThomasFaure\Pipedrive\Library\Activities Activities Object
      */
     protected $activities;
     /**
      * Placeholder attritube for the pipedrive notes class
-     * @var \Benhawker\Pipedrive\Library\Notes Notes Object
+     * @var \ThomasFaure\Pipedrive\Library\Notes Notes Object
      */
     protected $notes;
     /**
      * Placeholder attritube for the pipedrive dealFields class
-     * @var \Benhawker\Pipedrive\Library\DealFields DealFields Object
+     * @var \ThomasFaure\Pipedrive\Library\DealFields DealFields Object
      */
     protected $dealFields;
     /**
      * Placeholder attritube for the pipedrive dealFields class
-     * @var \Benhawker\Pipedrive\Library\PersonFields DealFields Object
+     * @var \ThomasFaure\Pipedrive\Library\PersonFields DealFields Object
      */
     protected $organizationFields;
     /**
      * Placeholder attritube for the pipedrive dealFields class
-     * @var \Benhawker\Pipedrive\Library\OrganizationFields DealFields Object
+     * @var \ThomasFaure\Pipedrive\Library\OrganizationFields DealFields Object
      */
     protected $personFields;
     /**
@@ -141,7 +143,7 @@ class Pipedrive
     /**
      * Returns the Pipedrive cURL Session
      *
-     * @return \Benhawker\Pipedrive\Library\Curl
+     * @return \ThomasFaure\Pipedrive\Library\Curl
      */
     public function curl()
     {
@@ -151,7 +153,7 @@ class Pipedrive
     /**
      * Returns the Pipedrive Persons Object
      *
-     * @return \Benhawker\Pipedrive\Library\Persons
+     * @return \ThomasFaure\Pipedrive\Library\Persons
      */
     public function persons()
     {
@@ -161,7 +163,7 @@ class Pipedrive
     /**
      * Returns the Pipedrive Deals Object
      *
-     * @return \Benhawker\Pipedrive\Library\Deals
+     * @return \ThomasFaure\Pipedrive\Library\Deals
      */
     public function deals()
     {
@@ -171,7 +173,7 @@ class Pipedrive
     /**
      * Returns the Pipedrive Activities Object
      *
-     * @return \Benhawker\Pipedrive\Library\Activities
+     * @return \ThomasFaure\Pipedrive\Library\Activities
      */
     public function activities()
     {
@@ -181,7 +183,7 @@ class Pipedrive
     /**
      * Returns the Pipedrive Notes Object
      *
-     * @return \Benhawker\Pipedrive\Library\Notes
+     * @return \ThomasFaure\Pipedrive\Library\Notes
      */
     public function notes()
     {
@@ -191,7 +193,7 @@ class Pipedrive
     /**
      * Returns the Pipedrive DealFields Object
      *
-     * @return \Benhawker\Pipedrive\Library\DealFields
+     * @return \ThomasFaure\Pipedrive\Library\DealFields
      */
     public function dealFields()
     {
@@ -201,7 +203,7 @@ class Pipedrive
     /**
      * Returns the Pipedrive PersonFields Object
      *
-     * @return \Benhawker\Pipedrive\Library\PersonFields
+     * @return \ThomasFaure\Pipedrive\Library\PersonFields
      */
     public function personFields()
     {
@@ -211,7 +213,7 @@ class Pipedrive
     /**
      * Returns the Pipedrive OrganizationFields Object
      *
-     * @return \Benhawker\Pipedrive\Library\OrganizationFields
+     * @return \ThomasFaure\Pipedrive\Library\OrganizationFields
      */
     public function organizationFields()
     {

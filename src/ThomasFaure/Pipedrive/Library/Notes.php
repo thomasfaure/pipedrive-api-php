@@ -1,6 +1,8 @@
-<?php namespace Benhawker\Pipedrive\Library;
+<?php
 
-use Benhawker\Pipedrive\Exceptions\PipedriveMissingFieldError;
+namespace ThomasFaure\Pipedrive\Library;
+
+use ThomasFaure\Pipedrive\Exceptions\PipedriveMissingFieldError;
 
 /**
  * Pipedrive Notes Methods
@@ -15,14 +17,14 @@ class Notes
 {
     /**
      * Hold the pipedrive cURL session
-     * @var \Benhawker\Pipedrive\Library\Curl Curl Object
+     * @var \ThomasFaure\Pipedrive\Library\Curl Curl Object
      */
     protected $curl;
 
     /**
      * Initialise the object load master class
      */
-    public function __construct(\Benhawker\Pipedrive\Pipedrive $master)
+    public function __construct(\ThomasFaure\Pipedrive\Pipedrive $master)
     {
         //associate curl class
         $this->curl = $master->curl();

@@ -1,6 +1,8 @@
-<?php namespace Benhawker\Pipedrive\Library;
+<?php
 
-use Benhawker\Pipedrive\Exceptions\PipedriveMissingFieldError;
+namespace ThomasFaure\Pipedrive\Library;
+
+use ThomasFaure\Pipedrive\Exceptions\PipedriveMissingFieldError;
 
 /**
  * Pipedrive Activities Methods
@@ -23,7 +25,7 @@ class Activities
     /**
      * Initialise the object load master class
      */
-    public function __construct(\Benhawker\Pipedrive\Pipedrive $master)
+    public function __construct(\ThomasFaure\Pipedrive\Pipedrive $master)
     {
         //associate curl class
         $this->curl = $master->curl();

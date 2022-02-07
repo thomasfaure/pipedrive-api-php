@@ -25,7 +25,7 @@
     },
     "autoload": {
         "psr-0": {
-            "Benhawker\\Pipedrive": "src/"
+            "ThomasFaure\\Pipedrive": "src/"
         }
     },
     "minimum-stability": "dev"

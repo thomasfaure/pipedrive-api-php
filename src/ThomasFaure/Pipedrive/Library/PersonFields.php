@@ -1,8 +1,8 @@
 <?php
 
-namespace Benhawker\Pipedrive\Library;
+namespace ThomasFaure\Pipedrive\Library;
 
-use Benhawker\Pipedrive\Exceptions\PipedriveMissingFieldError;
+use ThomasFaure\Pipedrive\Exceptions\PipedriveMissingFieldError;
 
 /**
  * Pipedrive PersonFields Methods
@@ -12,14 +12,14 @@ class PersonFields
 {
     /**
      * Hold the pipedrive cURL session
-     * @var \Benhawker\Pipedrive\Library\Curl Curl Object
+     * @var \ThomasFaure\Pipedrive\Library\Curl Curl Object
      */
     protected $curl;
 
     /**
      * Initialise the object load master class
      */
-    public function __construct(\Benhawker\Pipedrive\Pipedrive $master)
+    public function __construct(\ThomasFaure\Pipedrive\Pipedrive $master)
     {
         //associate curl class
         $this->curl = $master->curl();
